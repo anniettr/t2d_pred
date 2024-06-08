@@ -6,6 +6,9 @@ import streamlit as st
 ### Enter Your Results
 """
 
+def submit_input(input_params):
+  st.markdown("Button works :)")
+
 def main():
   name = st.text_input("Name", value=None, placeholder="Enter your name")
   if name is None: return
@@ -22,6 +25,14 @@ def main():
   diabetes_pedigree_function = st.number_input("Diabetes Pedigree Function", value=None, min_value=0.08, max_value=2.4, placeholder="Enter your diabetes pedigree function value")
 
   num_pregnancies = st.select_slider(label="Number of pregnancies", options=[_ for _ in range(21)])
+
+  input_params = (glucose_level, blood_pressure, skin_thickness, insulin, bmi, diabetes_pedigree_function)
+
+  if st.button("Submit"):
+    if None in input_params:
+      st.error("Not all values have been inputted properly.")
+    else:
+      submit_input(input_params)
 
 
 if __name__ == "__main__":
