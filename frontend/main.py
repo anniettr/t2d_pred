@@ -6,7 +6,7 @@ import pandas as pd
 """
 # Diabetes Prediction Model
 
-This model predicts whether or not a female member of the Pima Native American Tribe may have diabetes.
+This model predicts whether or not a female member of the Pima Native American Tribe may have type II diabetes.
 
 ### Enter Your Results
 """
