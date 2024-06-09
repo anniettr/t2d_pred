@@ -28,7 +28,7 @@ def main():
   if name is None: return
 
   st.markdown(f"Hello {name}! Please enter the following information.")
-  age = st.number_input(label="Age", value=None, min_value=18, max_value=100, placeholder="Enter your age")
+  age = st.number_input(label="Age", value=None, min_value=21, max_value=100, placeholder="Enter your age")
   if age is None: return
 
   glucose_level = st.number_input("Glucose Level (mmol/L)", value=None, min_value=0, max_value=199, placeholder="Enter your glucose tolerance test result")
