@@ -14,4 +14,4 @@ Once you are in the website, feel free to run your provided information on the m
 
 If you would like to run our notebook, please make sure to upload it to your Google Drive. In order for the notebook to work, you will need to configure the Google Drive filepath (location in code below) so that it can properly identify the Pima Diabetes dataset. If you need the dataset, a copy can be found under 'colab_notebooks/dataset.'
 
-![alt text](image.png)
+![alt text](radme-assets/image.png)
